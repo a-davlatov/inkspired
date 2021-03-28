@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.header {
+    padding-top: 2.66rem;
+    width: 100%;
+    height: auto;
+    position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 1000;
+
+    background: transparent;
+    transition: background .1s linear;
+
+    &.fixed {
+        position: fixed;
+        padding-top: 0;
+    }
+
+    .show & {
+        background: fade(#000, 95%);
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        box-shadow: 0 72px 124px 45px fade(#000, 50%);
+    }
+    
+    @media @tablet {
+        padding-top: 0;
+
+        &::before {
+            box-shadow: 0 50px 124px 45px fade(#000, 80%);
+        }
+    }
+
+    @media @mobile {
+        &::before {
+            box-shadow: 0 20px 124px 45px fade(#000, 80%);
+        }
+    }
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    img {
+        @media @mobile {
+            width: 162px;
+        }
+
+        @media @mobile-sm {
+            width: 100px;
+        }
+    }
+}

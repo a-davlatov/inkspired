@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.form {
+    margin-top: 5.33rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 29.33rem;
+
+    &--modal {
+        margin-top: 0;
+        padding: 0 1rem;
+    }
+
+    @media @tablet {
+        margin-top: 2rem;
+    }
+}
+
+.form__group {
+    position: relative;
+    width: 100%;
+
+    &:first-child {
+        margin-bottom: 3rem;
+    }
+    &:nth-child(2) {
+        margin-bottom: 5.86rem;
+
+        @media @tablet {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.46rem;
+    font-weight: 500;
+    color: @white;
+    border: none;
+    border-bottom: 1px solid @white;
+
+    background: transparent;
+
+    &:focus + .form__line {
+        width: 100%;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: @white;
+    }
+
+    @media @tablet {
+        font-size: 1.46rem;
+    }
+
+    @media @mobile {
+        font-size: 1.06rem;
+    }
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+
+    background-color: @gold;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    transition: width .3s linear;
+}

@@ -1,0 +1,58 @@
+// compress: true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+    
+    @media @mobile {
+        &.show {
+            overflow: hidden;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// Blocks
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/aside";
+@import "blocks/team";
+@import "blocks/socials";
+@import "blocks/works";
+@import "blocks/reviews";
+@import "blocks/slick";
+@import "blocks/record";
+@import "blocks/form";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/modal";
+
+@import "blocks/btn";
+@import "blocks/section";

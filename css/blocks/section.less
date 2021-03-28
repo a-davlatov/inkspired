@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.section {
+    margin-top: 10rem;
+
+    @media @tablet {
+        margin-top: 6rem;
+
+        &--works {
+            margin-top: 3rem;
+        }
+    }
+
+    @media @mobile {
+        margin-top: 3rem;
+    }
+}
+
+.section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: @black;
+
+    &--about {
+        margin-bottom: 2.33rem;
+        font-weight: 700;
+
+        @media @mobile {
+            margin-bottom: 1.46rem;
+        }
+    }
+
+    &--works {
+        @media (min-width: 768px) and (max-width: 1200px) {
+            margin-top: 5px;
+            font-size: 1.8rem;
+        }
+
+        @media @mobile-sm {
+            font-size: 1.2rem;
+        }
+    }
+
+    &--semiBold {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &--record {
+        text-align: center;
+        font-weight: 700;
+        color: @white;
+    }
+
+    &--faq {
+        text-align: center;
+        font-weight: 600;
+        color: @white;
+    }
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 1.6rem;
+    }
+}

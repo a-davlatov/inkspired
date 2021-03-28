@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.aside {
+    padding: 9.33rem 0;
+    width: 100%;
+    background: #37230E;
+
+    @media @mobile {
+        padding: 3.66rem 0 4.66rem;
+    }
+}
+
+.aside__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+}
+
+.aside__item {
+    margin-right: 2.66rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    @media @tablet {
+        margin-right: 0;
+        width: 49%;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 5.33rem;
+        }
+    }
+
+    @media @mobile {
+        margin-bottom: 3rem;
+        width: 100%;
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 3rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.aside__title {
+    margin: 1.6rem 0 1.86rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: @white;
+}
+
+.aside__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: @white;
+}

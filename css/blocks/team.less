@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.team__inner {
+    margin-top: 6.66rem;
+    display: flex;
+
+    @media @tablet {
+        margin-top: 2.66rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.team__mobile {
+    margin-top: 1.33rem;
+    display: none;
+    @media @mobile {
+        display: block;
+    }
+}
+
+.team__wrapper {
+    display: inline-block;
+  vertical-align: middle;
+}
+
+.team__item {
+    margin-right: 2.66rem;
+    width: 100%;
+    max-width: 21.33rem;
+    overflow: hidden;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media @tablet {
+        margin-right: 0;
+        padding-bottom: 3.33rem;
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            padding-bottom: 0;
+        }
+    }
+
+    @media @mobile {
+        padding-bottom: 1.66rem;
+    }
+}
+
+.team__title {
+    margin: 1.2rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: @black;
+}
+
+.team__text {
+    margin-bottom: 1.33rem;
+    font-size: 1.06rem;
+    line-height: 1.5;
+    color: @black;
+}

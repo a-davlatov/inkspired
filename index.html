@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Inkspired</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+
+				<div class="header__logo">
+					<img src="./img/logo.png" alt="">
+				</div>
+
+				<nav class="nav" id="nav">
+					<a class="nav__link" href="#" data-scroll="#about">О нас</a>
+					<a class="nav__link" href="#" data-scroll="#team">Мастера</a>
+					<a class="nav__link" href="#" data-scroll="#works">Портфолио</a>
+					<a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+					<a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+				</nav>
+
+				<button class="burger" type="button" id="navToggle">
+					<span class="burger__item">Menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Intro -->
+	<section class="intro parallax-window" id="intro" data-parallax="scroll" data-image-src="./img/intro/intro_bg.jpg">
+		<div class="container">
+			<div class="intro__inner">
+				<h1 class="intro__title">Искусство <br> на твоей коже</h1>
+				<div class="intro__text">Татуировки — как знак времени, они <br> напоминают о каком-то периоде в жизни
+				</div>
+				<button class="btn" type="button" data-modal="#modal_record">Записаться</button>
+				<div class="intro__icons">
+					<div class="intro__icon">
+						<img src="./img/intro/intro_icon1.png" alt="">
+					</div>
+					<div class="intro__icon">
+						<img src="./img/intro/intro_icon2.png" alt="">
+					</div>
+					<div class="intro__icon">
+						<img src="./img/intro/intro_icon3.png" alt="">
+					</div>
+					<div class="intro__icon">
+						<img src="./img/intro/intro_icon4.png" alt="">
+					</div>
+					<div class="intro__icon">
+						<img src="./img/intro/intro_icon5.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about__inner">
+				<div class="about__photos">
+					<div class="about__photo">
+						<picture>
+							<source srcset="./img/about2.jpg" type="image/jpeg" media="(max-width: 767px)">
+							<source srcset="./img/about1.jpg" type="image/jpeg" media="(max-width: 991px)">
+							<img src="./img/abouttwo.png" alt="">
+						</picture>
+					</div>
+				</div>
+				<div class="about__content">
+					<div class="section__title section__title--about">О нас</div>
+					<div class="about__text">
+						<p>«Inkspired» — это тату студия в Харькове, которая по-настоящему заботится о своих гостях.</p>
+						<p>Мы за вашу безопасность - поэтому используем современные гипоаллергенные краски и пигменты,
+							одноразовые расходные материалы.</p>
+						<p>Мы делаем по-настоящему крутые татуировки, украшая ваши тела и делая мир ярче.</p>
+						<p>Мы за ваш комфорт — поэтому для каждого гостя есть отдельный кабинет. Никаких open space зон
+							с толпой вокруг. Только вы и мастер!</p>
+						<p>Наши мастера всегда рады воплотить в жизнь интересные идеи. Вы будете уверены, что такой тату
+							нет ни у кого.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Aside -->
+	<div class="aside">
+		<div class="container">
+			<div class="aside__inner">
+				<div class="aside__item">
+					<img src="./img/aside/aside1.png" alt="" class="aside__icon">
+					<div class="aside__title">Уникальность</div>
+					<div class="aside__text">С каждым клиентом мы работаем индивидуально, тогда татуировка на теле
+						смотрится особым образом.</div>
+				</div>
+				<div class="aside__item">
+					<img src="./img/aside/aside2.png" alt="" class="aside__icon">
+					<div class="aside__title">Качество</div>
+					<div class="aside__text">Качество наших услуг достигается за счёт профессионализма, новейшего
+						оборудования и материалов.</div>
+				</div>
+				<div class="aside__item">
+					<img src="./img/aside/aside3.png" alt="" class="aside__icon">
+					<div class="aside__title">Подарок</div>
+					<div class="aside__text">Мы бесплатно разработаем индивидуальный эскиз тату максимально подходящий
+						именно Вам.</div>
+				</div>
+				<div class="aside__item">
+					<img src="./img/aside/aside4.png" alt="" class="aside__icon">
+					<div class="aside__title">Безопасность</div>
+					<div class="aside__text">Стерильность, безопасность и внимательность - не лозунг, а стиль работы
+						наших мастеров.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Team -->
+	<section class="team section" id="team">
+		<div class="container">
+			<h1 class="section__title section__title--semiBold">Наша команда</h1>
+			<div class="team__inner">
+				<div class="team__item">
+					<img src="./img/team/1.jpg" alt="" class="team__photo">
+					<div class="team__title">Ксения</div>
+					<div class="team__text">Опыт работы 15 лет.
+						Художественная татуировка, перманентный макияж.
+						Любимый стиль:
+						Реализм, <br> акварель.
+					</div>
+					<div class="socials socials--team">
+						<a class="social__link" href="#">
+							<img src="./img/socials/instagram.png" alt="instagram">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/facebook.png" alt="facebook">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/pinterest.png" alt="pinterest">
+						</a>
+					</div>
+				</div>
+				<div class="team__item">
+					<img src="./img/team/2.jpg" alt="" class="team__photo">
+					<div class="team__title">Никита</div>
+					<div class="team__text">Опыт работы 11 лет.
+						Художник – колорист, создающий яркие и динамичные образы. Создает уникальные, авторские
+						дизайны.
+					</div>
+					<div class="socials socials--team">
+						<a class="social__link" href="#">
+							<img src="./img/socials/instagram.png" alt="instagram">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/facebook.png" alt="facebook">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/pinterest.png" alt="pinterest">
+						</a>
+					</div>
+				</div>
+				<div class="team__item">
+					<img src="./img/team/3.png" alt="" class="team__photo">
+					<div class="team__title">Настя</div>
+					<div class="team__text">Опыт работы 14 лет.
+						Специализация: пирсинг, лазерное удаление тату, био-тату. Создает уникальные, авторские <br>
+						дизайны.
+					</div>
+					<div class="socials socials--team">
+						<a class="social__link" href="#">
+							<img src="./img/socials/instagram.png" alt="instagram">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/facebook.png" alt="facebook">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/pinterest.png" alt="pinterest">
+						</a>
+					</div>
+				</div>
+				<div class="team__item">
+					<img src="./img/team/4.png" alt="" class="team__photo">
+					<div class="team__title">Михаил</div>
+					<div class="team__text">Опыт работы 17 лет.
+						Специализация: Художественная татуировка. Разрабатывает уникальные авторские эскизы.
+					</div>
+					<div class="socials socials--team">
+						<a class="social__link" href="#">
+							<img src="./img/socials/instagram.png" alt="instagram">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/facebook.png" alt="facebook">
+						</a>
+						<a class="social__link" href="#">
+							<img src="./img/socials/pinterest.png" alt="pinterest">
+						</a>
+					</div>
+				</div>
+			</div><!-- /.team__inner -->
+
+			<!-- team__mobile -->
+			<div class="team__mobile slick">
+				<div class="team__wrapper">
+					<div class="team__item">
+						<img src="./img/team/1.jpg" alt="" class="team__photo">
+						<div class="team__title">Ксения</div>
+						<div class="team__text">Опыт работы 15 лет.
+							Художественная татуировка, перманентный макияж.
+							Любимый стиль:
+							Реализм, <br> акварель.
+						</div>
+						<div class="socials socials--team">
+							<a class="social__link" href="#">
+								<img src="./img/socials/instagram.png" alt="instagram">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/facebook.png" alt="facebook">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/pinterest.png" alt="pinterest">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="team__wrapper">
+					<div class="team__item">
+						<img src="./img/team/2.jpg" alt="" class="team__photo">
+						<div class="team__title">Никита</div>
+						<div class="team__text">Опыт работы 11 лет.
+							Художник – колорист, создающий яркие и динамичные образы. Создает уникальные, авторские
+							дизайны.
+						</div>
+						<div class="socials socials--team">
+							<a class="social__link" href="#">
+								<img src="./img/socials/instagram.png" alt="instagram">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/facebook.png" alt="facebook">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/pinterest.png" alt="pinterest">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="team__wrapper">
+					<div class="team__item">
+						<img src="./img/team/3.png" alt="" class="team__photo">
+						<div class="team__title">Настя</div>
+						<div class="team__text">Опыт работы 14 лет.
+							Специализация: пирсинг, лазерное удаление тату, био-тату. Создает уникальные, авторские <br>
+							дизайны.
+						</div>
+						<div class="socials socials--team">
+							<a class="social__link" href="#">
+								<img src="./img/socials/instagram.png" alt="instagram">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/facebook.png" alt="facebook">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/pinterest.png" alt="pinterest">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="team__wrapper">
+					<div class="team__item">
+						<img src="./img/team/4.png" alt="" class="team__photo">
+						<div class="team__title">Михаил</div>
+						<div class="team__text">Опыт работы 17 лет.
+							Специализация: Художественная татуировка. Разрабатывает уникальные авторские эскизы.
+						</div>
+						<div class="socials socials--team">
+							<a class="social__link" href="#">
+								<img src="./img/socials/instagram.png" alt="instagram">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/facebook.png" alt="facebook">
+							</a>
+							<a class="social__link" href="#">
+								<img src="./img/socials/pinterest.png" alt="pinterest">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.team__mobile -->
+		</div><!-- /.container -->
+	</section><!-- /.team -->
+
+	<!-- Works -->
+	<section class="section section--works" id="works">
+		<div class="container">
+			<div class="works__inner">
+				<div class="works__item">
+					<div class="section__title section__title--works section__title--semiBold">Портфолио</div>
+					<div class="works__text">смотрите больше наших работ в <a href="#" class="works__link">Instagram</a></div>
+					<img src="./img/works/works_icon.png" alt="" class="works__icon">
+				</div>
+				<div class="works__item">
+				</div>
+				<div class="works__item">
+				</div>
+				<div class="works__item">
+				</div>
+				<div class="works__item">
+				</div>
+				<div class="works__item">
+				</div>
+				<div class="works__item">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Reviews -->
+	<section class="reviews section" id="reviews">
+		<div class="container">
+			<h1 class="section__title section__title--semiBold">Отзывы</h1>
+			<div class="reviews__inner slick">
+				<div class="reviews__wrapper">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+						</div>
+						<div class="reviews__content">
+							<div class="reviews__header">
+								<div class="reviews__author">
+									<div class="reviews__name">Владимир</div>
+									<div class="reviews__rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+									</div>
+									<a href="#" class="reviews__icon">
+										<img src="./img/reviews/instagram.png" alt="">
+									</a>
+								</div>
+								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+							</div>
+							<div class="reviews__text">
+								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
+								вежливое
+								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
+								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__wrapper">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+						</div>
+						<div class="reviews__content">
+							<div class="reviews__header">
+								<div class="reviews__author">
+									<div class="reviews__name">Владимир</div>
+									<div class="reviews__rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+									</div>
+									<a href="#" class="reviews__icon">
+										<img src="./img/reviews/instagram.png" alt="">
+									</a>
+								</div>
+								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+							</div>
+							<div class="reviews__text">
+								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
+								вежливое
+								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
+								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__wrapper">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+						</div>
+						<div class="reviews__content">
+							<div class="reviews__header">
+								<div class="reviews__author">
+									<div class="reviews__name">Владимир</div>
+									<div class="reviews__rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+									</div>
+									<a href="#" class="reviews__icon">
+										<img src="./img/reviews/instagram.png" alt="">
+									</a>
+								</div>
+								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+							</div>
+							<div class="reviews__text">
+								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
+								вежливое
+								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
+								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__wrapper">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+						</div>
+						<div class="reviews__content">
+							<div class="reviews__header">
+								<div class="reviews__author">
+									<div class="reviews__name">Владимир</div>
+									<div class="reviews__rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+									</div>
+									<a href="#" class="reviews__icon">
+										<img src="./img/reviews/instagram.png" alt="">
+									</a>
+								</div>
+								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+							</div>
+							<div class="reviews__text">
+								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
+								вежливое
+								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
+								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__wrapper">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+						</div>
+						<div class="reviews__content">
+							<div class="reviews__header">
+								<div class="reviews__author">
+									<div class="reviews__name">Владимир</div>
+									<div class="reviews__rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+										<img src="./img/reviews/star.png" alt="rating">
+									</div>
+									<a href="#" class="reviews__icon">
+										<img src="./img/reviews/instagram.png" alt="">
+									</a>
+								</div>
+								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+							</div>
+							<div class="reviews__text">
+								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
+								вежливое
+								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
+								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.reviews__inner -->
+		</div><!-- /.container -->
+	</section> <!-- /.reviews -->
+
+	<!-- Record -->
+	<section class="record parallax-window" data-parallax="scroll" data-image-src="./img/record_bg.jpg">
+		<div class="container">
+			<div class="record__inner">
+				<h1 class="section__title section__title--record">Записаться на сеанс <br> к мастеру</h1>
+				<form action="/" class="form">
+					<div class="form__group">
+						<input type="text" class="form__input" placeholder="Имя">
+						<span class="form__line"></span>
+					</div>
+					<div class="form__group">
+						<input type="text" class="form__input" placeholder="Телефон">
+						<span class="form__line"></span>
+					</div>
+					<button class="btn" data-modal="#modal_response" type="submit">Записаться</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Faq -->
+	<section class="faq">
+		<div class="container">
+			<div class="faq__inner">
+				<h1 class="section__title section__title--faq">FAQ</h1>
+				<div class="faq__subtitle">Здесь мы окончательно развеем твои сомнения</div>
+
+				<div class="accordion" id="accordion">
+					<div class="accordion__item">
+						<div class="accordion__title">
+							Хочу сделать тату, с чего мне начать?
+						</div>
+						<div class="accordion__content">
+							Не загорайте. Прийти в салон с загорелой кожей – не самая лучшая идея, убедитесь, что на
+							коже нет повреждений
+							Не употребляйте алкоголь за день до сеанса!
+							Насыщайте кожу водой.
+						</div>
+					</div>
+				</div>
+				<div class="accordion" id="accordion">
+					<div class="accordion__item">
+						<div class="accordion__title">
+							Как определить стоимость татуировки?
+						</div>
+						<div class="accordion__content">
+							При рассчете стоимости тату определяется, сколько потребуется сеансов на Вашу работу, и
+							количество сеансов умножается на стандартную стоимость сеанса. Например, сеанс стоит 5000
+							рублей, а на Вашу татуировку понадобится 2 сеанса, таким образом, за тату придется выложить
+							5000*2=10000 рублей.
+						</div>
+					</div>
+				</div>
+				<div class="accordion" id="accordion">
+					<div class="accordion__item">
+						<div class="accordion__title">
+							Как долго заживает татуировка?
+						</div>
+						<div class="accordion__content">
+							Время заживления татуировки зависит от особенностей вашей кожи и правильного ухода при
+							условии, что мастер выполнил свою работу профессионально и в полной стерильности. В среднем,
+							на заживление уходит от 7 до 10 дней.
+						</div>
+					</div>
+				</div>
+				<div class="accordion" id="accordion">
+					<div class="accordion__item">
+						<div class="accordion__title">
+							Можно ли минимизировать болевые ощущения?
+						</div>
+						<div class="accordion__content">
+							Опытные специалисты советуют клиентам морально подготовиться к боли. Когда посетитель
+							ожидает неприятных ощущений, то легче справляется с дискомфортом. Есть люди, которые
+							занимаются медитацией и релаксацией, тем самым облегчая процесс.
+						</div>
+					</div>
+				</div>
+				<div class="accordion" id="accordion">
+					<div class="accordion__item">
+						<div class="accordion__title">
+							На сколько часто нужно обновлять татуировку?
+						</div>
+						<div class="accordion__content">
+							Обновлять татуировку вы можете и каждый год, и, скажем, раз в 7 лет - все зависит от того,
+							как вы относились к ней в течение этого времени. Если часто загорать на солнце, то и
+							обновлять придется чаще, а если же беречь тату от выгорания, то, соответственно, реже.
+						</div>
+					</div>
+				</div>
+			</div><!-- /.faq__inner -->
+		</div><!-- /.container -->
+	</section><!-- /.faq -->
+
+	<!-- Contacts -->
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<div class="contacts__inner">
+				<h1 class="section__title section__title--semiBold">Как с нами связаться?</h1>
+				<div class="contacts__subtitle">Написать в любой удобный Вам мессенджер</div>
+				<div class="socials">
+					<a class="social__link social__link--contacts" href="#">
+						<img src="./img/contacts/viber.png" alt="viber">
+					</a>
+					<a class="social__link social__link--contacts" href="#">
+						<img src="./img/contacts/telegram.png" alt="telegram">
+					</a>
+					<a class="social__link social__link--contacts" href="#">
+						<img src="./img/contacts/whatsapp.png" alt="whatsapp">
+					</a>
+				</div>
+				<div class="contacs__info">
+					<div class="contacts__item">
+						<img src="./img/contacts/location.png" alt="location" class="contacts__icon">
+						<div class="contacts__title">Адрес</div>
+						<div class="contacts__location">г. Харьков ул. Свободы 47</div>
+					</div>
+					<div class="contacts__item">
+						<img src="./img/contacts/phone.png" alt="location" class="contacts__icon">
+						<div class="contacts__title">Адрес</div>
+						<div class="contacts__phone">+38 050 758 22 96</div>
+					</div>
+					<div class="contacts__item">
+						<img src="./img/contacts/mail.png" alt="location" class="contacts__icon">
+						<div class="contacts__title">Адрес</div>
+						<div class="contacts__mail">tattoo.ink@gmail.com</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</section><!-- /.contacts -->
+
+	<!-- Map -->
+	<div class="map" id="map">
+		<!-- <img src="./img/map.jpg" alt=""> -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1813.2508035093679!2d36.22610902883047!3d50.00528443183876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1b8ac20aea3%3A0xeb84a46b5c64f5cf!2sInkspired!5e0!3m2!1sru!2s!4v1616882022389!5m2!1sru!2s" width="100%" height="605" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<img class="footer__logo" src="./img/logo.png" alt="logo">
+				<div class="footer__text">Следи за нами в социальных сетях</div>
+				<div class="socials">
+					<a class="social__link social__link--footer" href="#">
+						<img src="./img/socials/instagram2.png" alt="instagram">
+					</a>
+					<a class="social__link social__link--footer" href="#">
+						<img src="./img/socials/facebook2.png" alt="facebook">
+					</a>
+					<a class="social__link social__link--footer" href="#">
+						<img src="./img/socials/youtube.png" alt="youtube">
+					</a>
+					<a class="social__link social__link--footer" href="#">
+						<img src="./img/socials/pinterest2.png" alt="pinterest">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modals -->
+	<div class="modal" id="modal_record">
+		<div class="modal__dialog">
+			<button class="modal__close" data-close>
+				<img src="./img/cancel.png" alt="">
+			</button>
+
+			<h1 class="modal__title modal__title--sm">Оставьте заявку мастеру</h1>
+			<div class="modal__subtitle">Мы свяжемся с Вами в течении 10 минут</div>
+			<form action="/" class="form form--modal">
+				<div class="form__group">
+					<input type="text" class="form__input" placeholder="Имя">
+					<span class="form__line"></span>
+				</div>
+				<div class="form__group">
+					<input type="text" class="form__input" placeholder="Телефон">
+					<span class="form__line"></span>
+				</div>
+				<button class="btn" data-modal="#modal_response" type="submit">Записаться</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal" id="modal_response">
+		<div class="modal__dialog">
+			<button class="modal__close" data-close>
+				<img src="./img/cancel.png" alt="">
+			</button>
+			<h1 class="modal__title">Благодарим за запись</h1>
+			<div class="modal__subtitle">менеджер свяжется с Вами в течении 10 минут</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/parallax.min.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

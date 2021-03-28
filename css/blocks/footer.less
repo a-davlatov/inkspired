@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.footer {
+    width: 100%;
+    background: linear-gradient(90deg, #444, #000);
+}
+
+.footer__inner {
+    padding: 6.66rem 0 3.33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media @tablet {
+        padding: 4rem 0 2rem;
+    }
+
+    @media @mobile {
+        padding: 2rem 0 1rem;
+    }
+}
+
+.footer__logo {
+    margin: 0 0 5rem;
+
+    @media @tablet {
+        margin-bottom: 2.66rem;
+        width: 160px;
+    }
+
+    @media @mobile {
+        margin-bottom: 1.66rem;
+        width: 100px;
+    }
+}
+
+.footer__text {
+    margin-bottom: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: @gold;
+
+    @media @tablet {
+        font-size: 1.33rem;
+    }
+
+    @media @tablet {
+        font-size: 1rem;
+    }
+}

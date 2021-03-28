@@ -1,0 +1,89 @@
+// main: ../style.less
+
+.accordion {
+    margin-bottom: 3.33rem;
+    width: 100%;
+    max-width: 45.33rem;
+
+    @media @mobile {
+        margin-bottom: 2.33rem;
+    }
+}
+
+.accordion__title {
+    padding: 1.33rem 0.8rem 1.33rem 0;
+    font-size: 1.2rem;
+    color: @black;
+    background: @white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 5px fade(#000, 30%);
+    position: relative;
+
+    &.show {
+        &::after {
+            transform: rotate(180deg);
+            transition: transform .2s linear;
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 1px;
+        background: #000;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        z-index: 1;
+        transition: transform .2s linear;
+    }
+
+    @media @tablet {
+        &::before,
+        &::after {
+            width: 0.73rem;
+            left: 1rem;
+        }
+    }
+}
+
+.accordion__content {
+    display: none;
+    padding: 0.8rem 4.66rem 0.8rem 0;
+    font-size: 1rem;
+    color: #000;
+    background: @white;
+
+    @media @mobile {
+        padding-right: 1rem;
+    }
+}
+
+.accordion__title,
+.accordion__content {
+    padding-left: 5.2rem;
+
+    @media @tablet {
+        padding-left: 3rem;
+    }
+}

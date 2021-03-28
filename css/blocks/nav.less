@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    transition: height .3s ease;
+
+    .show & {
+        height: 500px;
+
+        @media @mobile {
+            height: 100vh;
+        }
+    }
+
+    @media @tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+		width: 100%;
+		height: 0;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		overflow: hidden;
+
+		background: fade(#000, 95%);
+		text-align: right;
+    }
+}
+
+.nav__link {
+    font-size: 1.33rem;
+    color: @white;
+    text-decoration: none;
+    transition: color .2s ease;
+
+    &:hover {
+        color: darken(@white, 20%);
+    }
+
+    @media @tablet {
+        padding-bottom: 2rem;
+		color: @gold;
+	}
+}
+
+.nav__link + .nav__link {
+    margin-left: 3.33rem;
+
+    @media @tablet {
+		margin-left: 0;
+    }
+}

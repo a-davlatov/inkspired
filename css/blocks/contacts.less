@@ -1,0 +1,105 @@
+// main: ../style.less
+
+.contacts {
+    margin: 6.66rem 0;
+
+    @media @tablet {
+        margin: 3.66rem 0;
+    }
+}
+
+.contacts__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__subtitle {
+    margin: 1.33rem 0 4rem;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    color: #000;
+    text-align: center;
+    
+    @media @tablet {
+        font-size: 1.33rem;
+    }
+
+    @media @mobile {
+        font-size: 0.93rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.contacs__info {
+    margin-top: 5.33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media @tablet {
+        margin-top: 4.33rem;
+    }
+
+    @media @mobile {
+        margin-top: 3.33rem;
+    }
+}
+
+.contacts__item {
+    margin-right: 5.66rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media @tablet {
+        margin-right: 2.66rem;
+    }
+
+    @media @mobile-sm {
+        margin-right: 1.66rem;
+    }
+}
+
+.contacts__icon {
+    @media @tablet {
+        width: 65px;
+        height: 65px;
+    }
+
+    @media @mobile {
+        width: 31px;
+        height: 31px;
+    }
+}
+
+.contacts__title {
+    margin: 0.9rem 0 0.66rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: @black;
+
+    @media @mobile {
+        font-size: 1.06rem;
+    }
+}
+
+.contacts__mail {
+    @media @mobile-sm {
+        white-space: normal;
+    }
+}
+
+.contacts__location,
+.contacts__phone,
+.contacts__mail {
+    font-size: 1.06rem;
+    color: @black;
+
+    @media @mobile {
+        font-size: 0.8rem;
+    }
+}

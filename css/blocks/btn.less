@@ -1,0 +1,21 @@
+// main: ../style.less
+
+.btn {
+    padding: 1.33rem 4.33rem;
+    font-family: 'Montserrat';
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: #363636;
+    cursor: pointer;
+
+    background: @gold;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    transition: all .2s linear;
+
+    &:hover {
+        background: darken(@gold, 5%);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
+    }
+}

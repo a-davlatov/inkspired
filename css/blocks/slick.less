@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.slick-slide {
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: -2.4rem;
+    left: 0;
+    z-index: 1;
+}
+
+.slick-dots {
+    li {
+        margin: 0 .8rem;
+    }
+}
+
+.slick-dots li.slick-active {
+    button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    bottom: 0;
+    background: none;
+    font-size: 0;
+    background: #363636;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
