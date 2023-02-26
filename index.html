@@ -11,6 +11,9 @@
 	<link type="image/png" sizes="96x96" rel="icon" href="favicon.png">
 	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+		integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Inkspired</title>
 </head>
 
@@ -21,7 +24,9 @@
 			<div class="header__inner">
 
 				<div class="header__logo">
-					<img src="./img/logo.png" alt="">
+					<a href="#" data-scroll="#intro">
+						<img src="./img/logo.png" alt="Лого">
+					</a>
 				</div>
 
 				<nav class="nav" id="nav">
@@ -136,7 +141,11 @@
 			<h1 class="section__title section__title--semiBold">Наша команда</h1>
 			<div class="team__inner">
 				<div class="team__item">
-					<img src="./img/team/1.jpg" alt="" class="team__photo">
+					<div class="team__img-wrapper">
+						<a href="./img/team/1.jpg" data-fancybox="first_gallery">
+							<img src="./img/team/1.jpg" alt="Ксения" class="team__photo">
+						</a>
+					</div>
 					<div class="team__title">Ксения</div>
 					<div class="team__text">Опыт работы 15 лет.
 						Художественная татуировка, перманентный макияж.
@@ -156,7 +165,11 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<img src="./img/team/2.jpg" alt="" class="team__photo">
+					<div class="team__img-wrapper">
+						<a href="./img/team/2.jpg" data-fancybox="first_gallery">
+							<img src="./img/team/2.jpg" alt="Никита" class="team__photo">
+						</a>
+					</div>
 					<div class="team__title">Никита</div>
 					<div class="team__text">Опыт работы 11 лет.
 						Художник – колорист, создающий яркие и динамичные образы. Создает уникальные, авторские
@@ -175,7 +188,11 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<img src="./img/team/3.png" alt="" class="team__photo">
+					<div class="team__img-wrapper">
+						<a href="./img/team/3.png" data-fancybox="first_gallery">
+							<img src="./img/team/3.png" alt="Настя" class="team__photo">
+						</a>
+					</div>
 					<div class="team__title">Настя</div>
 					<div class="team__text">Опыт работы 14 лет.
 						Специализация: пирсинг, лазерное удаление тату, био-тату. Создает уникальные, авторские <br>
@@ -194,7 +211,11 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<img src="./img/team/4.png" alt="" class="team__photo">
+					<div class="team__img-wrapper">
+						<a href="./img/team/4.png" data-fancybox="first_gallery">
+							<img src="./img/team/4.png" alt="Михаил" class="team__photo">
+						</a>
+					</div>
 					<div class="team__title">Михаил</div>
 					<div class="team__text">Опыт работы 17 лет.
 						Специализация: Художественная татуировка. Разрабатывает уникальные авторские эскизы.
@@ -309,21 +330,35 @@
 			<div class="works__inner">
 				<div class="works__item">
 					<div class="section__title section__title--works section__title--semiBold">Портфолио</div>
-					<div class="works__text">смотрите больше наших работ в <a href="#" class="works__link">Instagram</a>
+					<div class="works__text">смотрите больше наших работ в <a href="https://www.instagram.com/tattoo_masters_ukraine/" target="_blank" class="works__link">Instagram</a>
 					</div>
-					<img src="./img/works/works_icon.png" alt="" class="works__icon">
+					<img src="./img/works/works_icon.png" alt="instagram" width="30" height="30" class="works__icon">
 				</div>
 				<div class="works__item">
+					<a href="./img/works/works3.jpg" data-fancybox="second_gallery">
+						<img src="./img/works/works3.jpg" alt="Пример работ">
+					</a>
 				</div>
 				<div class="works__item">
+					<a href="./img/works/works1.jpg" data-fancybox="second_gallery">
+						<img src="./img/works/works1.jpg" alt="Пример работ">
+					</a>
 				</div>
 				<div class="works__item">
+					<a href="./img/works/works2.jpg" data-fancybox="second_gallery">
+						<img src="./img/works/works2.jpg" alt="Пример работ"></a>
 				</div>
 				<div class="works__item">
+					<a href="./img/works/works4.jpg" data-fancybox="second_gallery">
+						<img src="./img/works/works4.jpg" alt="Пример работ"></a>
 				</div>
 				<div class="works__item">
+					<a href="./img/works/works5.jpg" data-fancybox="second_gallery">
+						<img src="./img/works/works5.jpg" alt="Пример работ"></a>
 				</div>
 				<div class="works__item">
+					<a href="./img/works/works6.jpg" data-fancybox="second_gallery">
+						<img src="./img/works/works6.jpg" alt="Пример работ"></a>
 				</div>
 			</div>
 		</div>
@@ -350,11 +385,8 @@
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
 									</div>
-									<a href="#" class="reviews__icon">
-										<img src="./img/reviews/instagram.png" alt="">
-									</a>
 								</div>
-								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+								<time class="reviews__date" datetime="2022-06-22 19:44">15/06/22</time>
 							</div>
 							<div class="reviews__text">
 								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
@@ -368,12 +400,12 @@
 				<div class="reviews__wrapper">
 					<div class="reviews__item">
 						<div class="reviews__photo">
-							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+							<img src="./img/reviews/reviews_pic1.png" alt="review">
 						</div>
 						<div class="reviews__content">
 							<div class="reviews__header">
 								<div class="reviews__author">
-									<div class="reviews__name">Владимир</div>
+									<div class="reviews__name">ЕЛЕНА</div>
 									<div class="reviews__rating">
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
@@ -381,17 +413,13 @@
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
 									</div>
-									<a href="#" class="reviews__icon">
-										<img src="./img/reviews/instagram.png" alt="">
-									</a>
 								</div>
-								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+								<time class="reviews__date" datetime="2022-02-25 19:44">25/02/22</time>
 							</div>
 							<div class="reviews__text">
-								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
-								вежливое
-								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
-								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+								Долго выбирала студию для тату, остановилась именно на этом салоне , и не ошиблась!
+								Мастера приветливые, общительные , а самое главное компетентные , комфортная атмосфера !
+								Расположение очень удобное, легко добраться . Рекомендую !!!
 							</div>
 						</div>
 					</div>
@@ -399,12 +427,12 @@
 				<div class="reviews__wrapper">
 					<div class="reviews__item">
 						<div class="reviews__photo">
-							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+							<img src="./img/reviews/reviews_pic3.png" alt="review">
 						</div>
 						<div class="reviews__content">
 							<div class="reviews__header">
 								<div class="reviews__author">
-									<div class="reviews__name">Владимир</div>
+									<div class="reviews__name">МАРИЯ ИПАТОВА</div>
 									<div class="reviews__rating">
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
@@ -412,17 +440,13 @@
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
 									</div>
-									<a href="#" class="reviews__icon">
-										<img src="./img/reviews/instagram.png" alt="">
-									</a>
 								</div>
-								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+								<time class="reviews__date" datetime="2022-04-18 19:44">18/04/22</time>
 							</div>
 							<div class="reviews__text">
-								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
-								вежливое
-								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
-								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+								Отличный тату салон. Приветливый и доброжелательный персонал. Высококвалифицированные
+								мастера. Приятная, дружеская атмосфера и конечно это центр города, куда можно добраться
+								из любой точки города. В общем любителям тату и пирсинга рекомендую!!!!
 							</div>
 						</div>
 					</div>
@@ -430,12 +454,12 @@
 				<div class="reviews__wrapper">
 					<div class="reviews__item">
 						<div class="reviews__photo">
-							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+							<img src="./img/reviews/reviews_pic2.png" alt="review">
 						</div>
 						<div class="reviews__content">
 							<div class="reviews__header">
 								<div class="reviews__author">
-									<div class="reviews__name">Владимир</div>
+									<div class="reviews__name">ANDREW S.</div>
 									<div class="reviews__rating">
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
@@ -443,17 +467,14 @@
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
 									</div>
-									<a href="#" class="reviews__icon">
-										<img src="./img/reviews/instagram.png" alt="">
-									</a>
 								</div>
-								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+								<time class="reviews__date" datetime="2022-06-23 19:44">23/06/22</time>
 							</div>
 							<div class="reviews__text">
-								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
-								вежливое
-								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
-								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+								Прекрасное место, очень понравился интерьер и ремонт. Помещение крайне чистое,
+								отзывчивые сотрудники, располагающая атмосфера. Делал септум, очень переживал, но
+								замечательный мастер Екатерина сделала всё очень быстро и профессионально. Так же
+								подарили мне бумажку с напоминанием об уходе за проколом и контактные данные мастера.
 							</div>
 						</div>
 					</div>
@@ -461,12 +482,12 @@
 				<div class="reviews__wrapper">
 					<div class="reviews__item">
 						<div class="reviews__photo">
-							<img src="./img/reviews/reviews_pic.jpg" alt="review">
+							<img src="./img/reviews/reviews_pic5.jpg" alt="review">
 						</div>
 						<div class="reviews__content">
 							<div class="reviews__header">
 								<div class="reviews__author">
-									<div class="reviews__name">Владимир</div>
+									<div class="reviews__name">ОКСАНА А.</div>
 									<div class="reviews__rating">
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
@@ -474,17 +495,18 @@
 										<img src="./img/reviews/star.png" alt="rating">
 										<img src="./img/reviews/star.png" alt="rating">
 									</div>
-									<a href="#" class="reviews__icon">
-										<img src="./img/reviews/instagram.png" alt="">
-									</a>
 								</div>
-								<time class="reviews__date" datetime="2020-06-20 19:44">15/06/20</time>
+								<time class="reviews__date" datetime="2023-01-15 19:44">01/15/23</time>
 							</div>
 							<div class="reviews__text">
-								Всем доброго времени суток. Первое с чем я столкнулся в этом салоне - это легкое и
-								вежливое
-								обращение. Работой Михаила я очень доволен, мастер учел все мои пожелания по эскизу
-								татуировки. Желаю Вашему салону только успехов и процветания в Вашей не легкой работе.
+								Это лучшая студия в городе. Я очень рада что попала туда. Индивидуальный подход, просто
+								супер-уютная атмосфера, отличные мастера, которые помогут с выбором тату даже в самых
+								сложных случаях. У меня остались самые лучшие впечатления. Однозначно рекомендую эту
+								студию всем, кто хочет качественную красивую татуировку. Одельно хочу выразить
+								благодарность мастеру Дарье. Она настоящая волшебница. С ней несмотря на длительный
+								сеанс было очень уютно,комфортно и круто. Благодаря ей, я самый счастливый обладель
+								красивой татуировки. Огромное спасибо. Процветания и успехов данной студии. Вернусь к
+								вам обязательно!
 							</div>
 						</div>
 					</div>
@@ -593,13 +615,13 @@
 				<h1 class="section__title section__title--semiBold">Как с нами связаться?</h1>
 				<div class="contacts__subtitle">Написать в любой удобный Вам мессенджер</div>
 				<div class="socials">
-					<a class="social__link social__link--contacts" href="#">
+					<a class="social__link social__link--contacts" href="https://viber.click/7380507582296">
 						<img src="./img/contacts/viber.png" alt="viber">
 					</a>
-					<a class="social__link social__link--contacts" href="#">
+					<a class="social__link social__link--contacts" href="https://t.me/tattumehdivk">
 						<img src="./img/contacts/telegram.png" alt="telegram">
 					</a>
-					<a class="social__link social__link--contacts" href="#">
+					<a class="social__link social__link--contacts" href="https://wa.me/380507582296">
 						<img src="./img/contacts/whatsapp.png" alt="whatsapp">
 					</a>
 				</div>
@@ -640,19 +662,25 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
-				<img class="footer__logo" src="./img/logo.png" alt="logo">
+				<a href="#" data-scroll="#intro">
+					<img class="footer__logo" src="./img/logo.png" alt="Лого">
+				</a>
 				<div class="footer__text">Следи за нами в социальных сетях</div>
 				<div class="socials">
-					<a class="social__link social__link--footer" href="#">
+					<a class="social__link social__link--footer"
+						href="https://www.instagram.com/tattoo_masters_ukraine/" target="_blank">
 						<img src="./img/socials/instagram2.png" alt="instagram">
 					</a>
-					<a class="social__link social__link--footer" href="#">
+					<a class="social__link social__link--footer" href="https://www.facebook.com/groups/171567293573080"
+						target="_blank">
 						<img src="./img/socials/facebook2.png" alt="facebook">
 					</a>
-					<a class="social__link social__link--footer" href="#">
+					<a class="social__link social__link--footer" href="https://www.youtube.com/@KolnyaTattoo"
+						target="_blank">
 						<img src="./img/socials/youtube.png" alt="youtube">
 					</a>
-					<a class="social__link social__link--footer" href="#">
+					<a class="social__link social__link--footer" href="https://www.pinterest.com/kottattoostudio/"
+						target="_blank">
 						<img src="./img/socials/pinterest2.png" alt="pinterest">
 					</a>
 				</div>
@@ -695,7 +723,9 @@
 
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/slick.min.js"></script>
-	<script src="./js/parallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+		integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
 	<script src="./js/app.js"></script>
 </body>

@@ -109,28 +109,35 @@ $('.modal__dialog').on('click', function (evt) {
     evt.stopPropagation();
 });
 
-jQuery.support.cors = true;
-
 // Form submit
 $('.form').each(function () {
     $(this).validate({
         rules: {
             name: {
                 required: true,
-                minlength: 4,
-                maxlength: 25
+                minlength: 2,
+                maxlength: 25,
+
             },
-            phone: 'required'
+            phone: {
+                required: true,
+                digits: true
+            }
         },
         messages: {
             name: {
                 required: 'Имя обязательное поле',
                 minlength: 'Слишком короткое имя',
-                maxlength: 'Слишком длинное имя'
+                maxlength: 'Слишком длинное имя',
             },
-            phone: 'Телефон обязательное поле',
+            phone: {
+                required: 'Телефон обязательное поле',
+                digits: 'Введите корректный номер'
+
+            }
         },
         submitHandler: function (form) {
+            // $(this).$('.btn').disabled = true;
             $.ajax({
                 url: 'https://jsonplaceholder.typicode.com/posts',
                 type: "POST",
