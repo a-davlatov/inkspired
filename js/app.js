@@ -55,17 +55,45 @@ accTitle.on('click', function () {
 });
 
 // Slider: https://kenwheeler.github.io/slick
-const slider = $('.slick');
+const slider = $('#slick-1');
 slider.slick({
     infinite: true,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
-    pauseOnHover: false,
+    pauseOnHover: true,
     fade: false,
     dots: true,
     arrows: false
+});
+
+$(window).on('load resize', function () {
+    if ($(window).width() < 767 && $('#slick').find('[data-fancybox]').attr('data-fancybox')) {
+        $('#slick').find('[data-fancybox]').removeAttr('data-fancybox').attr('target', '_blank');
+        $('#slick').slick({
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplaySpeed: 3000,
+            fade: false,
+            dots: true,
+            arrows: false,
+            responsive: [
+                {
+                  breakpoint: 678,
+                  settings: {
+                    slidesToShow: 1
+                  }
+                }
+            ]
+        });
+    }
+    if ($(window).width() > 767 && !$('#slick').find('a').not('.social__link').attr('data-fancybox')) {
+        $('#slick').slick('unslick');
+        $('#slick').find('a').not('.social__link').attr('data-fancybox', 'first_gallery');
+    }
 });
 
 // Modal

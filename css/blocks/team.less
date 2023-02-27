@@ -11,13 +11,14 @@
     }
 
     @media @mobile {
-        display: none;
+        // display: none;
     }
 }
 
 .team__mobile {
     margin-top: 1.33rem;
     display: none;
+
     @media @mobile {
         display: block;
     }
@@ -25,21 +26,28 @@
 
 .team__wrapper {
     display: inline-block;
-  vertical-align: middle;
+    vertical-align: middle;
+}
+
+.team__wrapper {
+    &+& {
+        margin-left: 2.66rem;
+        @media @tablet {
+            margin-left: 15px;
+        }
+
+        @media @mobile-sm {
+            margin-left: 0;
+        }
+    }
 }
 
 .team__item {
-    margin-right: 2.66rem;
     width: 100%;
     max-width: 21.33rem;
     overflow: hidden;
 
-    &:last-child {
-        margin-right: 0;
-    }
-
     @media @tablet {
-        margin-right: 0;
         padding-bottom: 3.33rem;
 
         &:nth-child(3),
