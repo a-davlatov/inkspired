@@ -176,7 +176,9 @@ $('.form').each(function () {
             }
         },
         submitHandler: function (form) {
-            // $(this).$('.btn').disabled = true;
+            const submitbtn = $(this)[0].submitButton;
+            submitbtn.disabled = true;
+            
             // Form submit
             $.ajax({
                 url: 'https://jsonplaceholder.typicode.com/posts',
@@ -189,6 +191,7 @@ $('.form').each(function () {
                     form.reset();
                     $('#modal_record').removeClass('show');
                     $('#modal_response').addClass('show');
+                    submitbtn.disabled = false;
                     setTimeout(function () {
                         $('#modal_response').removeClass('show');
                         $('body').removeClass('no-scroll');
@@ -196,6 +199,7 @@ $('.form').each(function () {
                 },
                 error: function (response) {
                     console.log('An error accured');
+                    submitbtn.disabled = false;
                 }
             });
         }
