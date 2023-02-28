@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
 
     @media @tablet {
@@ -49,18 +50,22 @@
 }
 
 .contacts__item {
-    margin-right: 5.66rem;
 
-    &:last-child {
-        margin-right: 0;
+    & + & {
+        margin-left: 5.66rem;
     }
 
     @media @tablet {
-        margin-right: 2.66rem;
+        & + & {
+            margin-left: 2.66rem;
+        }
     }
 
     @media @mobile-sm {
-        margin-right: 1.66rem;
+        margin-top: 1.66rem;
+        & + & {
+            margin-left: 1.66rem;
+        }
     }
 }
 
