@@ -82,10 +82,10 @@ $(window).on('load resize', function () {
             arrows: false,
             responsive: [
                 {
-                  breakpoint: 678,
-                  settings: {
-                    slidesToShow: 1
-                  }
+                    breakpoint: 678,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
             ]
         });
@@ -137,7 +137,19 @@ $('.modal__dialog').on('click', function (evt) {
     evt.stopPropagation();
 });
 
-// Form submit
+// Add method to validate plugin for processing regex…
+$.validator.addMethod("regex", function (value, element, param) {
+    return this.optional(element) ||
+        value.match(typeof param == "string" ? new RegExp(param) : param);
+});
+
+const telInputEls = $('input[type=tel]');
+const maskOptions = { mask: '+{38}(000)000-00-00' };
+telInputEls.each(function (index, el) {
+    IMask(el, maskOptions);
+});
+
+// Forms validate
 $('.form').each(function () {
     $(this).validate({
         rules: {
@@ -145,11 +157,10 @@ $('.form').each(function () {
                 required: true,
                 minlength: 2,
                 maxlength: 25,
-
+                regex: "[a-zA-Zа-яА-ЯёЁ]+"
             },
             phone: {
                 required: true,
-                digits: true
             }
         },
         messages: {
@@ -157,15 +168,16 @@ $('.form').each(function () {
                 required: 'Имя обязательное поле',
                 minlength: 'Слишком короткое имя',
                 maxlength: 'Слишком длинное имя',
+                regex: 'Введите корректное имя'
             },
             phone: {
                 required: 'Телефон обязательное поле',
-                digits: 'Введите корректный номер'
 
             }
         },
         submitHandler: function (form) {
             // $(this).$('.btn').disabled = true;
+            // Form submit
             $.ajax({
                 url: 'https://jsonplaceholder.typicode.com/posts',
                 type: "POST",
@@ -183,7 +195,7 @@ $('.form').each(function () {
                     }, 5000)
                 },
                 error: function (response) {
-                    console.log(response);
+                    console.log('An error accured');
                 }
             });
         }
