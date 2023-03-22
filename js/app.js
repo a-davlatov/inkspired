@@ -205,3 +205,9 @@ $('.form').each(function () {
         }
     });
 });
+
+$(window).on('load', function() {
+    setTimeout(function() {
+        $('.preloader').css('display', 'none');
+    }, 500);
+})
